@@ -1,5 +1,5 @@
-using Tidy.Core.Domain.Identity;
-using Tidy.Core.Repository.Identity;
+using $ext_projectname$.Core.Domain.Identity;
+using $ext_projectname$.Core.Repository.Identity;
 using $safeprojectname$.Infrastructure;
 
 namespace $safeprojectname$.Repository.Identity

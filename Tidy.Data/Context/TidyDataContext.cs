@@ -2,14 +2,14 @@
 using System.ComponentModel.Composition.Hosting;
 using System.Data.Entity;
 using System.Reflection;
-using Tidy.Core.Domain.Identity;
+using $ext_projectname$.Core.Domain.Identity;
 using $safeprojectname$.Infrastructure;
 
 namespace $safeprojectname$.Context
 {
-    public class TidyDataContext : DbContext
+    public class $ext_projectname$DataContext : DbContext
     {
-        public TidyDataContext() : base("Tidy")
+        public $ext_projectname$DataContext() : base("$ext_projectname$")
         {
             // https://gist.github.com/brainwipe/7661942
             var ensureDllIsCopied = System.Data.Entity.SqlServer.SqlProviderServices.Instance;

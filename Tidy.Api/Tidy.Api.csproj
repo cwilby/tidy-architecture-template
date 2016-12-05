@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<?xml version="1.0" encoding="utf-8"?> <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -156,13 +155,13 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Tidy.Core\Tidy.Core.csproj">
+    <ProjectReference Include="..\$ext_projectname$.Core\$ext_projectname$.Core.csproj">
       <Project>{4a0c2eab-ba72-4c90-a424-0e2e0ad8894f}</Project>
-      <Name>Tidy.Core</Name>
+      <Name>$ext_projectname$.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Tidy.Data\Tidy.Data.csproj">
+    <ProjectReference Include="..\$ext_projectname$.Data\$ext_projectname$.Data.csproj">
       <Project>{338d394a-f50e-47a2-8c11-94244121bf8f}</Project>
-      <Name>Tidy.Data</Name>
+      <Name>$ext_projectname$.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

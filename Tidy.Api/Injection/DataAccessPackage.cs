@@ -1,5 +1,5 @@
-﻿using Tidy.Core.Infrastructure;
-using Tidy.Data.Infrastructure;
+﻿using $ext_projectname$.Core.Infrastructure;
+using $ext_projectname$.Data.Infrastructure;
 using SimpleInjector;
 using SimpleInjector.Packaging;
 

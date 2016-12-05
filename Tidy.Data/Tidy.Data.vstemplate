@@ -24,7 +24,7 @@
         </Folder>
       </Folder>
       <Folder Name="Context" TargetFolderName="Context">
-        <ProjectItem ReplaceParameters="true" TargetFileName="TidyDataContext.cs">TidyDataContext.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="$ext_safeprojectname$DataContext.cs">TidyDataContext.cs</ProjectItem>
       </Folder>
       <Folder Name="Identity" TargetFolderName="Identity">
         <ProjectItem ReplaceParameters="true" TargetFileName="UserStore.cs">UserStore.cs</ProjectItem>

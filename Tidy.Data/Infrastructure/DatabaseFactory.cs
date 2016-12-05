@@ -1,4 +1,4 @@
-﻿using Tidy.Core.Infrastructure;
+﻿using $ext_projectname$.Core.Infrastructure;
 using $safeprojectname$.Context;
 using System;
 
@@ -6,16 +6,16 @@ namespace $safeprojectname$.Infrastructure
 {
     public class DatabaseFactory : Disposable, IDatabaseFactory
     {
-        private readonly TidyDataContext _dataContext;
+        private readonly $ext_projectname$DataContext _dataContext;
 
-        public TidyDataContext GetDataContext()
+        public $ext_projectname$DataContext GetDataContext()
         {
-            return _dataContext ?? new TidyDataContext();
+            return _dataContext ?? new $ext_projectname$DataContext();
         }
 
         public DatabaseFactory()
         {
-            _dataContext = new TidyDataContext();
+            _dataContext = new $ext_projectname$DataContext();
         }
 
         protected override void DisposeCore()
@@ -25,6 +25,6 @@ namespace $safeprojectname$.Infrastructure
     }
     public interface IDatabaseFactory : IDisposable
     {
-        TidyDataContext GetDataContext();
+        $ext_projectname$DataContext GetDataContext();
     }
 }

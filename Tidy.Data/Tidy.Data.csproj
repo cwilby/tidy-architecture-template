@@ -57,7 +57,7 @@
     <Compile Include="Configuration\Identity\RoleConfiguration.cs" />
     <Compile Include="Configuration\Identity\UserConfiguration.cs" />
     <Compile Include="Configuration\Identity\UserRoleConfiguration.cs" />
-    <Compile Include="Context\TidyDataContext.cs" />
+    <Compile Include="Context\$ext_projectname$DataContext.cs" />
     <Compile Include="Identity\UserStore.cs" />
     <Compile Include="Infrastructure\ContextConfiguration.cs" />
     <Compile Include="Infrastructure\DatabaseFactory.cs" />
@@ -71,9 +71,9 @@
     <Compile Include="Repository\Identity\UserRoleRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Tidy.Core\Tidy.Core.csproj">
+    <ProjectReference Include="..\$ext_projectname$.Core\$ext_projectname$.Core.csproj">
       <Project>{4a0c2eab-ba72-4c90-a424-0e2e0ad8894f}</Project>
-      <Name>Tidy.Core</Name>
+      <Name>$ext_projectname$.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -1,4 +1,4 @@
-using Tidy.Core.Domain.Identity;
+using $ext_projectname$.Core.Domain.Identity;
 using $safeprojectname$.Infrastructure;
 using System.ComponentModel.Composition;
 using System.Data.Entity.ModelConfiguration;

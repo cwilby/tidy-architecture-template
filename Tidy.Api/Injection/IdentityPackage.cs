@@ -1,8 +1,8 @@
 ﻿using $safeprojectname$.Infrastructure;
-using Tidy.Core.Domain.Identity;
-using Tidy.Core.Infrastructure;
-using Tidy.Core.Repository.Identity;
-using Tidy.Data.Identity;
+using $ext_projectname$.Core.Domain.Identity;
+using $ext_projectname$.Core.Infrastructure;
+using $ext_projectname$.Core.Repository.Identity;
+using $ext_projectname$.Data.Identity;
 using Microsoft.AspNet.Identity;
 using SimpleInjector;
 using SimpleInjector.Packaging;

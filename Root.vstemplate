@@ -6,7 +6,7 @@
     <ProjectSubType>
     </ProjectSubType>
     <SortOrder>1000</SortOrder>
-    <CreateNewFolder>true</CreateNewFolder>
+    <CreateNewFolder>false</CreateNewFolder>
     <DefaultName>TidyApp</DefaultName>
     <ProvideDefaultName>true</ProvideDefaultName>
     <LocationField>Enabled</LocationField>
@@ -15,15 +15,19 @@
   </TemplateData>
   <TemplateContent>
     <ProjectCollection>
-      <ProjectTemplateLink ProjectName="$projectname$.Core">
-        Tidy.Core\Tidy.Core.vstemplate
-      </ProjectTemplateLink>
-      <ProjectTemplateLink ProjectName="$projectname$.Data">
-        Tidy.Data\Tidy.Data.vstemplate
-      </ProjectTemplateLink>
-      <ProjectTemplateLink ProjectName="$projectname$.Api">
-        Tidy.Api\Tidy.Api.vstemplate
-      </ProjectTemplateLink>
+      <SolutionFolder Name="Core">
+        <ProjectTemplateLink ProjectName="$projectname$.Core" CopyParameters="true">
+          Tidy.Core\Tidy.Core.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink ProjectName="$projectname$.Data" CopyParameters="true">
+          Tidy.Data\Tidy.Data.vstemplate
+        </ProjectTemplateLink>
+      </SolutionFolder>
+      <SolutionFolder Name="Services">
+        <ProjectTemplateLink ProjectName="$projectname$.Api" CopyParameters="true">
+          Tidy.Api\Tidy.Api.vstemplate
+        </ProjectTemplateLink>
+      </SolutionFolder>
     </ProjectCollection>
   </TemplateContent>
 </VSTemplate>

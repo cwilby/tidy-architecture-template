@@ -1,4 +1,4 @@
-﻿using Tidy.Core.Infrastructure;
+﻿using $ext_projectname$.Core.Infrastructure;
 using $safeprojectname$.Context;
 
 namespace $safeprojectname$.Infrastructure
@@ -6,9 +6,9 @@ namespace $safeprojectname$.Infrastructure
     public class UnitOfWork : IUnitOfWork
     {
         private readonly IDatabaseFactory _databaseFactory;
-        private TidyDataContext _dataContext;
+        private $ext_projectname$DataContext _dataContext;
 
-        protected TidyDataContext DataContext => _dataContext ?? (_dataContext = _databaseFactory.GetDataContext());
+        protected $ext_projectname$DataContext DataContext => _dataContext ?? (_dataContext = _databaseFactory.GetDataContext());
 
         public void Commit()
         {

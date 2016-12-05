@@ -1,4 +1,4 @@
-﻿using Tidy.Core.Repository;
+﻿using $ext_projectname$.Core.Repository;
 using $safeprojectname$.Context;
 using System;
 using System.Data.Entity;
@@ -9,9 +9,9 @@ namespace $safeprojectname$.Infrastructure
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
-        private TidyDataContext _dataContext;
+        private $ext_projectname$DataContext _dataContext;
 
-        protected TidyDataContext DataContext
+        protected $ext_projectname$DataContext DataContext
         {
             get { return _dataContext ?? (_dataContext = DatabaseFactory.GetDataContext()); }
             set { _dataContext = value; }

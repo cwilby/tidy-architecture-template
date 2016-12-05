@@ -1,4 +1,4 @@
-﻿using Tidy.Core.Infrastructure;
+﻿using $ext_projectname$.Core.Infrastructure;
 using Microsoft.Owin;
 using Owin;
 using SimpleInjector.Integration.WebApi;

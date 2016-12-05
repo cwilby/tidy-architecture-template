@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNet.Identity;
-using Tidy.Core.Domain.Identity;
-using Tidy.Core.Infrastructure;
+using $ext_projectname$.Core.Domain.Identity;
+using $ext_projectname$.Core.Infrastructure;
 using $safeprojectname$.Infrastructure;
 using System;
 using System.Collections.Generic;
@@ -19,8 +19,8 @@ namespace $safeprojectname$.Identity
 
         private readonly IDatabaseFactory _databaseFactory;
 
-        private TidyDataContext _db;
-        protected TidyDataContext Db => _db ?? (_db = _databaseFactory.GetDataContext());
+        private $ext_projectname$DataContext _db;
+        protected $ext_projectname$DataContext Db => _db ?? (_db = _databaseFactory.GetDataContext());
 
         public UserStore(IDatabaseFactory databaseFactory)
         {

@@ -14,6 +14,9 @@
     <Icon>__TemplateIcon.png</Icon>
   </TemplateData>
   <TemplateContent>
+    <CustomParameters>
+      <CustomParameter Name="$ProjectRootNamespace$" Value="$SpecificSolutionName$" />
+    </CustomParameters>
     <Project TargetFileName="Tidy.Api.csproj" File="Tidy.Api.csproj" ReplaceParameters="true">
       <Folder Name="App_Data" TargetFolderName="App_Data" />
       <Folder Name="App_Start" TargetFolderName="App_Start">
