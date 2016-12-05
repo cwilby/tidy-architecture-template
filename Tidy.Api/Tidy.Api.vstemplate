@@ -1,0 +1,43 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Tidy Architecture Api Project</Name>
+    <Description>Tidy Architecture: ASP Web API project containing routes</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Tidy.Api</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.png</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Tidy.Api.csproj" File="Tidy.Api.csproj" ReplaceParameters="true">
+      <Folder Name="App_Data" TargetFolderName="App_Data" />
+      <Folder Name="App_Start" TargetFolderName="App_Start">
+        <ProjectItem ReplaceParameters="true" TargetFileName="InjectionConfig.cs">InjectionConfig.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="OAuthConfig.cs">OAuthConfig.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="WebApiConfig.cs">WebApiConfig.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Infrastructure" TargetFolderName="Infrastructure">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Session.cs">Session.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Injection" TargetFolderName="Injection">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AutoMapperPackage.cs">AutoMapperPackage.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="DataAccessPackage.cs">DataAccessPackage.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IdentityPackage.cs">IdentityPackage.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="RepositoryPackage.cs">RepositoryPackage.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Startup.cs">Startup.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Web.config">Web.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Web.Debug.config">Web.Debug.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Web.Release.config">Web.Release.config</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

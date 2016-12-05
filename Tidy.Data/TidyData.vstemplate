@@ -1,0 +1,53 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+  	<Name>Tidy Architecture Data Project</Name>
+    <Description>Tidy Architecture: Data project containing data access logic</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Tidy.Data</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.png</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Tidy.Data.csproj" File="Tidy.Data.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="App.config">App.config</ProjectItem>
+      <Folder Name="Configuration" TargetFolderName="Configuration">
+        <Folder Name="Identity" TargetFolderName="Identity">
+          <ProjectItem ReplaceParameters="true" TargetFileName="RoleConfiguration.cs">RoleConfiguration.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="UserConfiguration.cs">UserConfiguration.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="UserRoleConfiguration.cs">UserRoleConfiguration.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Context" TargetFolderName="Context">
+        <ProjectItem ReplaceParameters="true" TargetFileName="TidyDataContext.cs">TidyDataContext.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Identity" TargetFolderName="Identity">
+        <ProjectItem ReplaceParameters="true" TargetFileName="UserStore.cs">UserStore.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Infrastructure" TargetFolderName="Infrastructure">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ContextConfiguration.cs">ContextConfiguration.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="DatabaseFactory.cs">DatabaseFactory.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IEntityConfiguration.cs">IEntityConfiguration.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MigrationsInitializer.cs">MigrationsInitializer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Repository.cs">Repository.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="UnitOfWork.cs">UnitOfWork.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Repository" TargetFolderName="Repository">
+        <Folder Name="Identity" TargetFolderName="Identity">
+          <ProjectItem ReplaceParameters="true" TargetFileName="RoleRepository.cs">RoleRepository.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="UserRepository.cs">UserRepository.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="UserRoleRepository.cs">UserRoleRepository.cs</ProjectItem>
+        </Folder>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

@@ -1,0 +1,61 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Tidy Architecture Core Project</Name>
+    <Description>Tidy Architecture: Core project containing basic interfaces</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Tidy.Core</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.png</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Tidy.Core.csproj" File="Tidy.Core.csproj" ReplaceParameters="true">
+      <Folder Name="Domain" TargetFolderName="Domain">
+        <Folder Name="Identity" TargetFolderName="Identity">
+          <ProjectItem ReplaceParameters="true" TargetFileName="Role.cs">Role.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="User.cs">User.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="UserRole.cs">UserRole.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Exceptions" TargetFolderName="Exceptions">
+        <ProjectItem ReplaceParameters="true" TargetFileName="CreateEntityException.cs">CreateEntityException.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="DeleteEntityException.cs">DeleteEntityException.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ReadEntityException.cs">ReadEntityException.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="UpdateEntityException.cs">UpdateEntityException.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Extensions" TargetFolderName="Extensions">
+        <ProjectItem ReplaceParameters="true" TargetFileName="LinqExtensions.cs">LinqExtensions.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Infrastructure" TargetFolderName="Infrastructure">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Disposable.cs">Disposable.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ICreatedDate.cs">ICreatedDate.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IDatabaseInitializer.cs">IDatabaseInitializer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ISession.cs">ISession.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IUnitOfWork.cs">IUnitOfWork.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Repository" TargetFolderName="Repository">
+        <Folder Name="Identity" TargetFolderName="Identity">
+          <ProjectItem ReplaceParameters="true" TargetFileName="IRoleRepository.cs">IRoleRepository.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="IUserRepository.cs">IUserRepository.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="IUserRoleRepository.cs">IUserRoleRepository.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IRepository.cs">IRepository.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Service" TargetFolderName="Service">
+        <ProjectItem ReplaceParameters="true" TargetFileName="BaseService.cs">BaseService.cs</ProjectItem>
+        <Folder Name="Identity" TargetFolderName="Identity">
+          <ProjectItem ReplaceParameters="true" TargetFileName="IdentityService.cs">IdentityService.cs</ProjectItem>
+        </Folder>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
